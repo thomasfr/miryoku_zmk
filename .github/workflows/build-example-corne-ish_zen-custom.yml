@@ -1,8 +1,8 @@
 # Copyright 2022 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Build Example corne-ish_zen custom'
-on: workflow_dispatch
+name: "Build Example corne-ish_zen custom"
+on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: ./.github/workflows/main.yml
@@ -10,5 +10,5 @@ jobs:
     with:
       board: '["corne-ish_zen_left","corne-ish_zen_right"]'
       custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
-      kconfig: '["CONFIG_ZMK_MOUSE=y\nCONFIG_ZMK_DISPLAY_HIDE_MOMENTARY_LAYERS=y\nCONFIG_CUSTOM_WIDGET_LOGO_IMAGE_MIRYOKU=y\nCONFIG_IL0323_INVERT=y"]'
+      kconfig: '["#define MIRYOKU_CLIPBOARD_MAC\n#define MIRYOKU_ALPHAS_QWERTY\n#define MIRYOKU_TAP_QWERTY\nCONFIG_ZMK_MOUSE=y\nCONFIG_ZMK_DISPLAY_HIDE_MOMENTARY_LAYERS=n\nCONFIG_CUSTOM_WIDGET_LOGO_IMAGE_MIRYOKU=y\nCONFIG_IL0323_INVERT=y"]'
       branches: '["manna-harbour/zmk/zen zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
