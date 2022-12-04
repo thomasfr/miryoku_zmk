@@ -77,3 +77,4 @@ U_UND,             U_CUT,             U_CPY,             U_PST,             U_RD
 &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LCMD,          &kp MEH,           &kp HYPER,         &kp LCMD,          &kp LOPT,          &kp LCTRL,         &kp LSHFT,         \
 U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
 U_NP,              U_NP,              U_BTN3,            U_BTN1,            U_BTN2,            U_BTN2,            U_BTN1,            U_BTN3,            U_NP,              U_NP
+
