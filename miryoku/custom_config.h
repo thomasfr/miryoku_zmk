@@ -5,7 +5,7 @@
 #define CONFIG_CUSTOM_WIDGET_LOGO_IMAGE_MIRYOKU=y
 #define CONFIG_IL0323_INVERT=y
 
-#define MIRYOKU_KLUDGE_MOUSEKEYSPR
+#define MIRYOKU_KLUDGE_MOUSEKEYSPRx
 #define CONFIG_ZMK_MOUSE=y
 
 #define MIRYOKU_ALPHAS_QWERTY
@@ -27,7 +27,7 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPC),  U_LT
 
 
 #define MIRYOKU_LAYER_MEDIA \
-U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_NA,              U_NA,              &kp C_MUTE,        U_NA,              U_NA,         \
+U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_NA,              U_NA,              &kp K_MUTE,        U_NA,              U_NA,         \
 &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LCMD,          U_NA,              U_NA,              &kp C_PREV,        &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_NEXT,        \
 U_NA,              U_NA,              &u_to_U_FUN,       &u_to_U_MEDIA,     U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,       \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp C_PP,          &kp C_NEXT,        &kp K_MUTE,        U_NP,              U_NP
@@ -42,8 +42,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
 &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LCMD,          U_NA,              U_NU,              U_MS_L,            U_MS_D,            U_MS_U,            U_MS_R,            \
 U_NA,              U_NA,              &u_to_U_SYM,       &u_to_U_MOUSE,     U_NA,              U_NU,              U_WH_L,            U_WH_D,            U_WH_U,            U_WH_R,            \
-U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_BTN2,            U_BTN1,            U_BTN3,            U_NP,              U_NP
-
+U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_BTN2,            U_BTN1,            U_BTN3,            U_NP,              
 
 
 
