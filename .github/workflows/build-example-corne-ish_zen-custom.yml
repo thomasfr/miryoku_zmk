@@ -9,5 +9,4 @@ jobs:
     secrets: inherit
     with:
       board: '["corne-ish_zen_left","corne-ish_zen_right"]'
-      custom_config: "default"
-      branches: '["manna-harbour/zmk/zen zmkfirmware/zmk/main"]'
+      branches: '["manna-harbour/zmk/zen zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
