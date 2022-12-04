@@ -2,11 +2,11 @@
 // https://github.com/manna-harbour/miryoku
 
 //#define CONFIG_ZMK_DISPLAY_HIDE_MOMENTARY_LAYERS=n
-#define CONFIG_CUSTOM_WIDGET_LOGO_IMAGE_MIRYOKU=y
-#define CONFIG_IL0323_INVERT=y
+#define CONFIG_CUSTOM_WIDGET_LOGO_IMAGE_MIRYOKU y
+#define CONFIG_IL0323_INVERT y
 
-#define MIRYOKU_KLUDGE_MOUSEKEYSPRx
-#define CONFIG_ZMK_MOUSE=y
+#define MIRYOKU_KLUDGE_MOUSEKEYSPR
+#define CONFIG_ZMK_MOUSE y
 
 #define MIRYOKU_ALPHAS_QWERTY
 #define MIRYOKU_TAP_QWERTY
@@ -16,7 +16,13 @@
 //#define MIRYOKU_LAYERS_FLIP
 //#define MIRYOKU_MAPPING_EXTENDED_THUMBS
 
-#define LOPT LALT
+#define LOPT     LALT
+#define SH_APPS  C_AC_DESKTOP_SHOW_ALL_APPLICATIONS
+#define SH_WINS  C_AC_DESKTOP_SHOW_ALL_WINDOWS
+#define HYPER    LS(LC(LA(LCMD)))
+#define MEH      LS(LC(LALT))
+
+#define HYPER_C LS(LC(LA(LG(C))))
 
 #define MIRYOKU_LAYER_BASE \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
@@ -60,10 +66,10 @@ U_NP,              U_NP,              &kp LPAR,          &kp RPAR,          &kp 
 U_NP,              U_NP,              &kp DOT,           &kp NUM_0,         &kp MINUS,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_LAYER_FUN \
-&kp F12,           &kp F7,            &kp F8,            &kp F9,            &kp PSCRN,         U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
-&kp F11,           &kp F4,            &kp F5,            &kp F6,            &kp SLCK,          U_NA,              &kp LCMD,          &kp LOPT,          &kp LCTRL,         &kp LSHFT,          \
-&kp F10,           &kp F1,            &kp F2,            &kp F3,            &kp PAUSE_BREAK,   U_NA,              &u_to_U_FUN,       &u_to_U_MEDIA,     &kp RALT,          U_NA,              \
-U_NP,              U_NP,              &kp K_APP,         &kp SPC,           &kp TAB,           U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+U_NA,              U_NA,              &kp C_BRI_DN,      &kp C_BRI_UP,      &kp LG(LS(N4)),      U_NA,            &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
+U_NA,              U_NA,              &kp SH_APPS,       &kp SH_WINS,       &kp LG(LS(LC(N4))),  U_NA,            &kp LCMD,          &kp LOPT,          &kp LCTRL,         &kp LSHFT,          \
+U_NA,              U_NA,              U_NA,              &kp F3,            &kp LG(LS(N4)),      U_NA,            &u_to_U_FUN,       &u_to_U_MEDIA,     &kp RALT,          U_NA,              \
+U_NP,              U_NP,              &kp HYPER_C,       &kp SPC,           &kp TAB,             U_NA,            U_NA,              U_NA,              U_NP,              U_NP
 
 
 
