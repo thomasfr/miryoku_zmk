@@ -66,9 +66,9 @@ U_NP,              U_NP,              &kp LPAR,          &kp RPAR,          &kp 
 U_NP,              U_NP,              &kp DOT,           &kp NUM_0,         &kp MINUS,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_LAYER_FUN \
-&kp C_PWR,         U_NA,              &kp C_BRI_DN,      &kp C_BRI_UP,      &kp SCR_AREA,      U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
-&kp K_PWR,         U_NA,              &kp SH_APPS,       &kp SH_WINS,       &kp SCR_CLP_AREA,  &kp HYPER,         &kp LCMD,          &kp LOPT,          &kp LCTRL,         &kp LSHFT,         \
-&kp LC(LG(Q)),     U_NA,              U_NA,              U_NA,              &kp SCR_WIN,       U_NA,              &u_to_U_FUN,       &u_to_U_MEDIA,     &kp RALT,          U_NA,              \
+LC(LG(Q)),         U_NA,              &kp C_BRI_DN,      &kp C_BRI_UP,      &kp SCR_AREA,      U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
+LC(LG(F6)),        U_NA,              &kp SH_APPS,       &kp SH_WINS,       &kp SCR_CLP_AREA,  &kp HYPER,         &kp LCMD,          &kp LOPT,          &kp LCTRL,         &kp LSHFT,         \
+U_NA,              U_NA,              U_NA,              U_NA,              &kp SCR_WIN,       U_NA,              &u_to_U_FUN,       &u_to_U_MEDIA,     &kp RALT,          U_NA,              \
 U_NP,              U_NP,              &kp HYPER_1,       &kp LG(SPC),       &kp HYPER_2,       U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 
