@@ -60,10 +60,10 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 U_NP,              U_NP,              &kp LPAR,          &kp RPAR,          &kp UNDER,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_LAYER_NUM \
-&kp LBKT,          &kp NUM_7,         &kp NUM_8,         &kp NUM_9,         &kp RBKT,          U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
-&kp SEMI,          &kp NUM_4,         &kp NUM_5,         &kp NUM_6,         &kp EQL,           &kp HYPER,         &kp LCMD,          &kp LOPT,          &kp LCTRL,         &kp LSHFT,         \
-&kp GRAVE,         &kp NUM_1,         &kp NUM_2,         &kp NUM_3,         &kp BSLH,          U_NA,              &u_to_U_NUM,       &u_to_U_NAV,       &kp RALT,          U_NA,              \
-U_NP,              U_NP,              &kp DOT,           &kp NUM_0,         &kp MINUS,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+&kp LBKT,          &kp NUM_7,         &kp NUM_8,         &kp NUM_9,         &kp KP_KP_DIVIDE,  U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
+&kp SEMI,          &kp NUM_4,         &kp NUM_5,         &kp NUM_6,         &kp KP_MULTIPLY,   &kp HYPER,         &kp LCMD,          &kp LOPT,          &kp LCTRL,         &kp LSHFT,         \
+&kp GRAVE,         &kp NUM_1,         &kp NUM_2,         &kp NUM_3,         &kp KP_MINUS,      U_NA,              &u_to_U_NUM,       &u_to_U_NAV,       &kp RALT,          U_NA,              \
+U_NP,              U_NP,              &kp NUM_DOT,       &kp NUM_0,         &kp KP_PLUS,       U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_LAYER_FUN \
 U_NA,              U_NA,              &kp C_BRI_DN,      &kp C_BRI_UP,      &kp SCR_AREA,      U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
