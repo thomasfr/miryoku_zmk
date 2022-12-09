@@ -43,22 +43,6 @@ MIRYOKU_X(FUN,    "Fun")
 #define U_SYM    5
 #define U_FUN    6
 
-#define M_SHIFT_FUNCTION(NAME, BINDING, SHIFT_BINDING) \
-/ { \
-  behaviors { \
-    NAME: NAME { \
-      compatible = "zmk,behavior-mod-morph"; \
-      label = U_STRINGIFY(NAME); \
-      #binding-cells = <0>; \
-      bindings = <BINDING>, <SHIFT_BINDING>; \
-      mods = <(MOD_LSFT|MOD_RSFT)>; \
-    }; \
-  }; \
-};
-
-M_SHIFT_FUNCTION(u_comma_semi, &kp COMMA, &kp SEMICOLON)
-M_SHIFT_FUNCTION(u_dot_colon, &kp DOT, &kp COLON)
-
 
 #define MIRYOKU_LAYER_BASE \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             /***/         &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,                 \
