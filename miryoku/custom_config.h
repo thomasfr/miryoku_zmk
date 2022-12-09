@@ -60,7 +60,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 U_NP,              U_NP,              &kp LPAR,          &kp RPAR,          &kp UNDER,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_LAYER_NUM \
-&kp LBKT,          &kp NUM_7,         &kp NUM_8,         &kp NUM_9,         &kp KP_KP_DIVIDE,  U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
+&kp LBKT,          &kp NUM_7,         &kp NUM_8,         &kp NUM_9,         &kp KP_DIVIDE,     U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
 &kp SEMI,          &kp NUM_4,         &kp NUM_5,         &kp NUM_6,         &kp KP_MULTIPLY,   &kp HYPER,         &kp LCMD,          &kp LOPT,          &kp LCTRL,         &kp LSHFT,         \
 &kp GRAVE,         &kp NUM_1,         &kp NUM_2,         &kp NUM_3,         &kp KP_MINUS,      U_NA,              &u_to_U_NUM,       &u_to_U_NAV,       &kp RALT,          U_NA,              \
 U_NP,              U_NP,              &kp NUM_DOT,       &kp NUM_0,         &kp KP_PLUS,       U_NA,              U_NA,              U_NA,              U_NP,              U_NP
