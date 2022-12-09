@@ -4,7 +4,7 @@
 #pragma once
 
 #define U_COMMA_SEMI &u_comma_semi
-#define U_COMMA_SEMI &u_dot_colon
+#define U_DOT_COLON &u_dot_colon
 
 #if defined (MIRYOKU_KLUDGE_GLOBALSHIFTFUNCTIONS)
   #define U_RGB_TOG &u_rgb_tog
