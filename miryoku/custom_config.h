@@ -82,10 +82,10 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 U_NP,              U_NP,              &kp LPAR,          &kp RPAR,          &kp UNDER,         /***/          U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_LAYER_NUM \
-&kp CARET,         &kp NUM_7,         &kp NUM_8,         &kp NUM_9,         &kp BACKSLASH,     /***/          U_NA,              &u_to_U_BASE,      U_NA,              U_NA,              U_BOOT,            \
-&kp SEMI,          &kp NUM_4,         &kp NUM_5,         &kp NUM_6,         &kp STAR,          /***/          &kp RHYPER,        &kp RCMD,          &kp ROPT,          &kp RCTRL,         &kp RSHFT,         \
-&kp GRAVE,         &kp NUM_1,         &kp NUM_2,         &kp NUM_3,         &kp PLUS,          /***/          U_NA,              &u_to_U_NUM,       &u_to_U_NAV,       U_NA,              U_NA,              \
-U_NP,              U_NP,              &kp KP_DOT,        &kp NUM_0,         &kp MINUS,         /***/          U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+&kp CARET,         &kp N7,            &kp N8,            &kp N9,            &kp BACKSLASH,     /***/          U_NA,              &u_to_U_BASE,      U_NA,              U_NA,              U_BOOT,            \
+&kp SEMI,          &kp N4,            &kp N5,            &kp N6,            &kp STAR,          /***/          &kp RHYPER,        &kp RCMD,          &kp ROPT,          &kp RCTRL,         &kp RSHFT,         \
+&kp GRAVE,         &kp N1,            &kp N2,            &kp N3,            &kp PLUS,          /***/          U_NA,              &u_to_U_NUM,       &u_to_U_NAV,       U_NA,              U_NA,              \
+U_NP,              U_NP,              &kp DOT,           &kp N0,            &kp MINUS,         /***/          U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_LAYER_FUN \
 U_NA,              U_NA,              &kp C_BRI_DN,      &kp C_BRI_UP,      &kp SCR_AREA,      /***/          U_NA,              &u_to_U_BASE,      U_NA,              U_NA,              U_BOOT,            \
