@@ -4,7 +4,7 @@
 #define MIRYOKU_KLUDGE_MOUSEKEYSPR
 
 #define MIRYOKU_ALPHAS_QWERTY
-#define MIRYOKU_TAP_QWERTY
+//#define MIRYOKU_TAP_QWERTY
 //#define MIRYOKU_EXTRA_QWERTY
 //#define MIRYOKU_NAV_INVERTEDT
 #define MIRYOKU_CLIPBOARD_MAC
@@ -44,11 +44,14 @@ MIRYOKU_X(FUN,    "Fun")
 #define U_FUN    6
 
 
+MIRYOKU_SHIFT_FUNCTION(u_comma_semi, &kp COMMA, &kp SEMICOLON)
+MIRYOKU_SHIFT_FUNCTION(u_dot_colon, &kp DOT, &kp COLON)
+
 
 #define MIRYOKU_LAYER_BASE \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             /***/         &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,                 \
-U_MT(LSHFT, A),    U_MT(LCTRL, S),    U_MT(LOPT, D),     U_MT(LCMD, F),     U_MT(LHYPER, G),   /***/         U_MT(RHYPER, H),    U_MT(RCMD, J),     U_MT(ROPT, K),     U_MT(RCTRL, L),    U_MT(RSHFT, SQT),      \
-&kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             /***/         &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,             \
+U_MT(LSHFT, A),    U_MT(LCTRL, S),    U_MT(LOPT, D),     U_MT(LCMD, F),     U_MT(LHYPER, G),   /***/         U_MT(RHYPER, H),   U_MT(RCMD, J),     U_MT(ROPT, K),     U_MT(RCTRL, L),    U_MT(RSHFT, SQT),      \
+&kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             /***/         &kp N,             &kp M,             &u_comma_semi,     &u_dot_colon,      &kp SLASH,             \
 U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPC),  U_LT(U_MOUSE, TAB),/***/         U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
 
 
