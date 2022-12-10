@@ -23,12 +23,12 @@
       global-quick-tap;
       bindings = <&mo>, <&kp>;
     };
-    u_tog: u_tog {
-        compatible = "zmk,behavior-tap-dance";
-        label = "u_tog";
-        #binding-cells = <0>;
-        tapping-term-ms = <150>;
-        bindings = <&kp>, <&tog>;
+    td_tog: td_tog {
+      compatible = "zmk,behavior-tap-dance";
+      label = "td_tog";
+      #binding-cells = <0>;
+      tapping-term-ms = <150>;
+      bindings = <&kp Q>, <&tog U_ONEHAND>;
     };        
   };
 };
