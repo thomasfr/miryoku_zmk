@@ -23,9 +23,9 @@
       global-quick-tap;
       bindings = <&mo>, <&kp>;
     };
-    td_tog: td_tog {
+    u_tog: u_tog {
         compatible = "zmk,behavior-tap-dance";
-        label = "td_tog";
+        label = "u_tog";
         #binding-cells = <0>;
         tapping-term-ms = <150>;
         bindings = <&kp>, <&tog>;
