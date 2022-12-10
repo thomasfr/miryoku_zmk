@@ -18,6 +18,7 @@
 #define LHYPER       LS(LC(LA(LCMD)))
 #define RHYPER       RS(RC(RA(RCMD)))
 #define MEH          LS(LC(LALT))
+#define EURO         LS(LA(N2))
 
 #define HYPER_1      LS(LC(LA(LG(N1))))
 #define HYPER_2      LS(LC(LA(LG(N2))))
@@ -79,15 +80,15 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 
 
 #define MIRYOKU_LAYER_SYM \
-&kp LBRC,          &kp AMPS,          &kp ASTRK,         &kp LPAR,          &kp RBRC,          /***/          U_NA,              &u_to_U_BASE,      U_NA,              U_NA,              U_BOOT,            \
-&kp COLON,         &kp DLLR,          &kp PRCT,          &kp CRRT,          &kp PLUS,          /***/          &kp RHYPER,        &kp RCMD,          &kp ROPT,          &kp RCTRL,         &kp RSHFT,         \
-&kp TILDE,         &kp EXCL,          &kp AT,            &kp HASH,          &kp PIPE,          /***/          U_NA,              &u_to_U_SYM,       &u_to_U_MOUSE,     U_NA,              U_NA,              \
-U_NP,              U_NP,              &kp LPAR,          &kp RPAR,          &kp UNDER,         /***/          U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+&kp CARET,         &kp MINUS,         &kp LEFT_BRACKET,   &kp RIGHT_BRACKET,&kp PIPE,          /***/          &kp TILDE,         &kp FSLH,          &kp QMARK,         &kp PIPE,          &kp PIPE,          \
+&kp AT,            &kp LEFT_BRACE,    &kp RIGHT_BRACE,    &kp EQUAL,        &kp STAR,          /***/          &kp DOLLAR,        &kp SQT,           &kp LPAR,          &kp RPAR,          &kp DQT,           \
+&kp PERCENT,       &kp PLUS,          &kp LESS_THAN,      &kp GREATER_THAN, &kp AMPERSAND,     /***/          &kp GRAVE,         &kp HASH,          &kp SEMI,          &kp COLON,         &kp BSLH,          \
+U_NP,              U_NP,              &kp DOT,            &kp EXCLAMATION,  &kp UNDER,         /***/          U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_LAYER_NUM \
 &kp CARET,         &kp N7,            &kp N8,            &kp N9,            &kp BACKSLASH,     /***/          U_NA,              &u_to_U_BASE,      U_NA,              U_NA,              U_BOOT,            \
-&kp SEMI,          &kp N4,            &kp N5,            &kp N6,            &kp STAR,          /***/          &kp RHYPER,        &kp RCMD,          &kp ROPT,          &kp RCTRL,         &kp RSHFT,         \
-&kp GRAVE,         &kp N1,            &kp N2,            &kp N3,            &kp PLUS,          /***/          U_NA,              &u_to_U_NUM,       &u_to_U_NAV,       U_NA,              U_NA,              \
+&kp EURO,          &kp N4,            &kp N5,            &kp N6,            &kp STAR,          /***/          &kp RHYPER,        &kp RCMD,          &kp ROPT,          &kp RCTRL,         &kp RSHFT,         \
+&kp PERCENT,       &kp N1,            &kp N2,            &kp N3,            &kp PLUS,          /***/          U_NA,              &u_to_U_NUM,       &u_to_U_NAV,       U_NA,              U_NA,              \
 U_NP,              U_NP,              &kp DOT,           &kp N0,            &kp MINUS,         /***/          U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_LAYER_FUN \
