@@ -39,7 +39,7 @@ MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYM,    "Sym") \
 MIRYOKU_X(FUN,    "Fun") \
 MIRYOKU_X(PLAIN,  "Plain") \
-MIRYOKU_X(ONEHAND,"OneHand")
+MIRYOKU_X(ONEHAND,"Onehand")
 
 #define U_BASE      0
 #define U_NAV       1
