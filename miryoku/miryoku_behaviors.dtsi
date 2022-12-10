@@ -28,7 +28,7 @@
       label = "td_tog";
       #binding-cells = <0>;
       tapping-term-ms = <150>;
-      bindings = <&kp>, <&tog>;
+      bindings = <&kp Q>, <&tog U_ONEHAND>;
     };        
   };
 };
