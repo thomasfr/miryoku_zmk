@@ -80,7 +80,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 
 
 #define MIRYOKU_LAYER_SYM \
-&kp CARET,         &kp MINUS,         &kp LEFT_BRACKET,   &kp RIGHT_BRACKET,&kp PIPE,          /***/          &kp TILDE,         &kp FSLH,          &kp QMARK,         &kp PIPE,          &kp PIPE,          \
+&kp CARET,         &kp MINUS,         &kp LEFT_BRACKET,   &kp RIGHT_BRACKET,&kp PIPE,          /***/          &kp TILDE,         &kp FSLH,          &kp QMARK,         &dbl_arrow,        &dbl_arrow,        \
 &kp AT,            &kp LEFT_BRACE,    &kp RIGHT_BRACE,    &kp EQUAL,        &kp STAR,          /***/          &kp DOLLAR,        &kp SQT,           &kp LPAR,          &kp RPAR,          &kp DQT,           \
 &kp PERCENT,       &kp PLUS,          &kp LESS_THAN,      &kp GREATER_THAN, &kp AMPERSAND,     /***/          &kp GRAVE,         &kp HASH,          &kp SEMI,          &kp COLON,         &kp BSLH,          \
 U_NP,              U_NP,              &kp DOT,            &kp EXCLAMATION,  &kp UNDER,         /***/          U_NA,              U_NA,              U_NA,              U_NP,              U_NP
