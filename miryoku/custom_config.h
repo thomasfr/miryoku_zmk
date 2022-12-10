@@ -53,9 +53,9 @@ MIRYOKU_X(ONEHAND,"Onehand")
 
 
 #define MIRYOKU_LAYER_BASE \
-&td_tog,           &kp W,            &kp E,             &kp R,             &kp T,             /***/         &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,                 \
+&tdtog_q_onehand,  &kp W,            &kp E,             &kp R,             &kp T,             /***/         &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,                 \
 U_MT(LSHFT, A),    U_MT(LCTRL, S),    U_MT(LOPT, D),     U_MT(LCMD, F),     U_MT(LHYPER, G),   /***/         U_MT(RHYPER, H),   U_MT(RCMD, J),     U_MT(ROPT, K),     U_MT(RCTRL, L),    U_MT(RSHFT, SQT),      \
-U_LT(U_PLAIN, Z),  &kp X,             &kp C,             &kp V,             &kp B,             /***/         &kp N,             &kp M,             U_COMMA_SEMI,      U_DOT_COLON,       U_FSLH_BSLH,           \
+&tdtog_z_plain,    &kp X,             &kp C,             &kp V,             &kp B,             /***/         &kp N,             &kp M,             U_COMMA_SEMI,      U_DOT_COLON,       U_FSLH_BSLH,           \
 U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPC),  U_LT(U_MOUSE, TAB),/***/         U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
 
 
@@ -107,14 +107,14 @@ U_NP,              U_NP,              &kp HYPER_1,       &kp HYPER_2,       &kp 
 #define MIRYOKU_LAYER_PLAIN \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             /***/         &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,                 \
 &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             /***/         &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,               \
-U_NA,              &kp X,             &kp C,             &kp V,             &kp B,             /***/         &kp N,             &kp M,             U_COMMA_SEMI,      U_DOT_COLON,       U_FSLH_BSLH,           \
+&tog U_ONEHAND,    &kp X,             &kp C,             &kp V,             &kp B,             /***/         &kp N,             &kp M,             U_COMMA_SEMI,      U_DOT_COLON,       U_FSLH_BSLH,           \
 U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPC),  U_LT(U_MOUSE, TAB),/***/         U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
 
 
 #define MIRYOKU_LAYER_ONEHAND \
-&tog U_ONEHAND,    U_CUT,             U_CPY,             U_PST,             U_NA,             /***/         &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,                 \
-U_NA,              &kp DEL,           &kp RET,           &kp BSPC,          U_NA,             /***/         &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,               \
-U_NA,              U_NA,              U_NA,              U_NA,              U_NA,             /***/         &kp N,             &kp M,             U_COMMA_SEMI,      U_DOT_COLON,       U_FSLH_BSLH,           \
+&tog U_ONEHAND,    U_CUT,             U_CPY,             U_PST,             U_NA,              /***/         &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,                 \
+U_NA,              &kp DEL,           &kp BSPC,          &kp RET,           U_NA,              /***/         &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,               \
+U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              /***/         &kp N,             &kp M,             U_COMMA_SEMI,      U_DOT_COLON,       U_FSLH_BSLH,           \
 U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPC),  U_LT(U_MOUSE, TAB),/***/        U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
 
 
