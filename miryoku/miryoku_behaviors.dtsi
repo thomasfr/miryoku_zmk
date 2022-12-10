@@ -30,6 +30,13 @@
       tapping-term-ms = <150>;
       bindings = <&kp Q>, <&tog U_ONEHAND>;
     };        
+    tdtog_none_onehand: tdtog_none_onehand {
+      compatible = "zmk,behavior-tap-dance";
+      label = "tdtog_none_onehand";
+      #binding-cells = <0>;
+      tapping-term-ms = <150>;
+      bindings = <&none>, <&tog U_ONEHAND>;
+    };        
     tdtog_z_plain: tdtog_z_plain {
       compatible = "zmk,behavior-tap-dance";
       label = "tdtog_z_plain";
