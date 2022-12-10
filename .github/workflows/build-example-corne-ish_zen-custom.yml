@@ -9,5 +9,5 @@ jobs:
     secrets: inherit
     with:
       board: '["corne-ish_zen_left","corne-ish_zen_right"]'
-      kconfig: '["CONFIG_ZMK_MOUSE=y\nCONFIG_CUSTOM_WIDGET_LOGO_IMAGE_MIRYOKU=y\nCONFIG_IL0323_INVERT=y\nCONFIG_ZMK_DISPLAY_HIDE_MOMENTARY_LAYERS=y"]'
+      kconfig: '["CONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=1\nCONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=1\nCONFIG_ZMK_MOUSE=y\nCONFIG_CUSTOM_WIDGET_LOGO_IMAGE_MIRYOKU=y\nCONFIG_IL0323_INVERT=y\nCONFIG_ZMK_DISPLAY_HIDE_MOMENTARY_LAYERS=y"]'
       branches: '["manna-harbour/zmk/zen zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
