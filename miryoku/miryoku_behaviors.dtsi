@@ -31,12 +31,10 @@
         dbl_arrow: dbl_arrow {
             label = "Double arrow right";
             compatible = "zmk,behavior-macro";
+            wait-ms = <1>;
+            tap-ms = <1>;
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp Z &kp M &kp K>
-                , <&macro_release &kp LSHFT>
-                ;
+            bindings = <&macro_tap &kp EQUAL &kp GREATER_THAN>;
         };
     };
 };
