@@ -23,16 +23,16 @@
       global-quick-tap;
       bindings = <&mo>, <&kp>;
     };
-    tdtog_q_onehand: tdtog_q_onehand {
+    tdtog_q_switch: tdtog_q_switch {
       compatible = "zmk,behavior-tap-dance";
-      label = "tdtog_q_onehand";
+      label = "tdtog_q_switch";
       #binding-cells = <0>;
       tapping-term-ms = <150>;
       bindings = <&kp Q>, <&tog U_ONEHAND>;
     };        
-    tdtog_none_onehand: tdtog_none_onehand {
+    tdtog_none_switch: tdtog_none_switch {
       compatible = "zmk,behavior-tap-dance";
-      label = "tdtog_none_onehand";
+      label = "tdtog_none_switch";
       #binding-cells = <0>;
       tapping-term-ms = <150>;
       bindings = <&none>, <&tog U_ONEHAND>;
