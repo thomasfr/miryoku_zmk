@@ -76,10 +76,10 @@ U_NP,                 U_NP,                 U_LT(U_MEDIA, ESC),   U_LT(U_NAV, SP
 
 
 #define MIRYOKU_LAYER_SWITCH \
-&tdtog_und_switch,    &kp U_CUT,            &kp U_CPY,            &kp U_PST,            &kp U_RDO,            /***/   &kp Y,                &kp U,                &kp I,                &kp O,                &kp P,                 \
-U_MT(LSHFT, &none),   U_MT(LCTRL, DEL),     U_MT(LOPT, BSPC),     U_MT(LCMD, RET),      U_MT(LHYPER, &none),  /***/   U_MT(RHYPER, H),      U_MT(RCMD, J),        U_MT(ROPT, K),        U_MT(RCTRL, L),       U_MT(RSHFT, SQT),      \
-U_NA,                 U_NA,                 U_NA,                 U_NA,                 U_NA,                 /***/   &kp N,                &kp M,                U_COMMA_SEMI,         U_DOT_COLON,          U_FSLH_BSLH,           \
-U_NP,                 U_NP,                 U_LT(U_MEDIA, ESC),   U_LT(U_NUM, SPC),     U_LT(U_SYM, TAB),     /***/   U_LT(U_MOUSE, RET),   U_LT(U_NAV, BSPC),    U_LT(U_FUN, DEL),     U_NP,                 U_NP
+&tdtog_und_switch,    U_NU,                 &kp U_RDO,            &kp U_UND,            &kp PG_UP,            /***/   &kp Y,                &kp U,                &kp I,                &kp O,                &kp P,                 \
+U_MT(LSHFT, &none),   U_MT(LCTRL, U_CUT),   U_MT(LOPT, U_CPY),    U_MT(LCMD, U_PST),    &u_caps_word,         /***/   U_MT(RHYPER, H),      U_MT(RCMD, J),        U_MT(ROPT, K),        U_MT(RCTRL, L),       U_MT(RSHFT, SQT),      \
+U_NU,                 &kp DEL,              &kp BSPC,             &kp RET,              &kp PG_DN,            /***/   &kp N,                &kp M,                U_COMMA_SEMI,         U_DOT_COLON,          U_FSLH_BSLH,           \
+U_NP,                 U_NP,                 U_NA,                 U_NA,                 U_NA,                 /***/   U_LT(U_MOUSE, RET),   U_LT(U_NAV, BSPC),    U_LT(U_FUN, DEL),     U_NP,                 U_NP
 
 
 
