@@ -35,7 +35,7 @@
       label = "tdtog_und_switch";
       #binding-cells = <0>;
       tapping-term-ms = <135>;
-      bindings = <U_UND>, <&tog U_SWITCH>;
+      bindings = <&kp U_UND>, <&tog U_SWITCH>;
     };        
     tdtog_z_plain: tdtog_z_plain {
       compatible = "zmk,behavior-tap-dance";
