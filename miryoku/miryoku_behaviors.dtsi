@@ -30,12 +30,12 @@
       tapping-term-ms = <125>;
       bindings = <&kp Q>, <&tog U_SWITCH>;
     };        
-    tdtog_none_switch: tdtog_none_switch {
+    tdtog_und_switch: tdtog_und_switch {
       compatible = "zmk,behavior-tap-dance";
-      label = "tdtog_none_switch";
+      label = "tdtog_und_switch";
       #binding-cells = <0>;
       tapping-term-ms = <125>;
-      bindings = <&none>, <&tog U_SWITCH>;
+      bindings = <U_UND>, <&tog U_SWITCH>;
     };        
     tdtog_z_plain: tdtog_z_plain {
       compatible = "zmk,behavior-tap-dance";
