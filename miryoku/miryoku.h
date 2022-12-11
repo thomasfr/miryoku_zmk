@@ -15,7 +15,7 @@
 
 #define U_TAPPING_TERM 220
 
-#include "miryoku_clipboard.h"
+//#include "miryoku_clipboard.h"
 
 #include "miryoku_double_tap_guard.h"
 
