@@ -30,12 +30,12 @@
       tapping-term-ms = <135>;
       bindings = <&kp Q>, <&tog U_SWITCH>;
     };        
-    tdtog_und_switch: tdtog_und_switch {
+    tdtog_switch: tdtog_switch {
       compatible = "zmk,behavior-tap-dance";
-      label = "tdtog_und_switch";
+      label = "tdtog_switch";
       #binding-cells = <0>;
       tapping-term-ms = <135>;
-      bindings = <&kp U_UND>, <&tog U_SWITCH>;
+      bindings = <&none>, <&tog U_SWITCH>;
     };        
     tdtog_z_plain: tdtog_z_plain {
       compatible = "zmk,behavior-tap-dance";
@@ -43,7 +43,14 @@
       #binding-cells = <0>;
       tapping-term-ms = <135>;
       bindings = <&kp Z>, <&tog U_PLAIN>;
-    };        
+    };
+    tdtog_plain: tdtog_plain {
+      compatible = "zmk,behavior-tap-dance";
+      label = "tdtog_plain";
+      #binding-cells = <0>;
+      tapping-term-ms = <135>;
+      bindings = <&none>, <&tog U_PLAIN>;
+    }        
   };
 };
 
