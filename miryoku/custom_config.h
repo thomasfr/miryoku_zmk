@@ -107,7 +107,7 @@ U_NP,                 U_NP,                 U_NA,                 U_NA,         
 
 
 #define MIRYOKU_LAYER_SYM \
-&kp CARET,            &kp PIPE,             &kp LEFT_BRACKET,     &kp RIGHT_BRACKET,    &kp MINUS,            /***/   &kp UNDER,            &kp GT,               &kp LT,               &kp TILDE,            &mkd_code,            \
+&kp CARET,            &kp PIPE,             &kp LEFT_BRACKET,     &kp RIGHT_BRACKET,    &kp MINUS,            /***/   &kp UNDER,            &kp LT,               &kp GT,               &kp TILDE,            &mkd_code,            \
 U_MT(LSHFT, AT),      U_MT(LCTRL, EQUAL),   U_MT(LOPT, LBRC),     U_MT(LCMD, RBRC),     U_MT(LHYPER, STAR),   /***/   U_MT(RHYPER, HASH),   U_MT(RCMD, LPAR),     U_MT(ROPT, RPAR),     U_MT(RCTRL, BSLH),    U_MT(RSHIFT, FSLH),   \
 &kp PERCENT,          &kp AMPERSAND,        &kp DQT,              &kp SQT,              &kp PLUS,             /***/   &kp DOLLAR,           &kp SEMI,             &kp COLON,            &kp GRAVE,            &dbl_arrow,           \
 U_NP,                 U_NP,                 &kp EXCLAMATION,      &kp DOT,              &kp QMARK,            /***/   U_NA,                 U_NA,                 U_NA,                 U_NP,                 U_NP
