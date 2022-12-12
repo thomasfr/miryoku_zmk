@@ -50,12 +50,20 @@
 / {
     macros {
         dbl_arrow: dbl_arrow {
-            label = "Double arrow right";
+            label = "dbl_arrow";
             compatible = "zmk,behavior-macro";
             wait-ms = <1>;
             tap-ms = <1>;
             #binding-cells = <0>;
             bindings = <&macro_tap &kp EQUAL &kp GREATER_THAN>;
+        };
+        mkd_code: mkd_code {
+            label = "mkd_code";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <1>;
+            tap-ms = <1>;
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp GRAVE &kp GRAVE &kp GRAVE>;
         };
     };
 };
