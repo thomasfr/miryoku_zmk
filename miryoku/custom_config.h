@@ -107,14 +107,14 @@ U_NP,                 U_NP,                 U_NA,                 U_NA,         
 
 
 #define MIRYOKU_LAYER_SYM \
-&kp CARET,            &kp PIPE,             &kp LEFT_BRACKET,     &kp RIGHT_BRACKET,    &kp MINUS,            /***/   &kp UNDER,            &kp LT,               &kp GT,               &kp TILDE,            &mkd_code,            \
-U_MT(LSHFT, AT),      U_MT(LCTRL, EQUAL),   U_MT(LOPT, LBRC),     U_MT(LCMD, RBRC),     U_MT(LHYPER, STAR),   /***/   U_MT(RHYPER, HASH),   U_MT(RCMD, LPAR),     U_MT(ROPT, RPAR),     U_MT(RCTRL, BSLH),    U_MT(RSHIFT, FSLH),   \
+&kp CARET,            &kp PIPE,             &kp LEFT_BRACKET,     &kp RIGHT_BRACKET,    &kp STAR,             /***/   &kp UNDER,            &kp LT,               &kp GT,               &kp TILDE,            &mkd_code,            \
+U_MT(LSHFT, AT),      U_MT(LCTRL, EQUAL),   U_MT(LOPT, LBRC),     U_MT(LCMD, RBRC),     U_MT(LHYPER, MINUS),  /***/   U_MT(RHYPER, HASH),   U_MT(RCMD, LPAR),     U_MT(ROPT, RPAR),     U_MT(RCTRL, BSLH),    U_MT(RSHIFT, FSLH),   \
 &kp PERCENT,          &kp AMPERSAND,        &kp SQT,              &kp DQT,              &kp PLUS,             /***/   &kp DOLLAR,           &kp COLON,            &kp SEMI,             &kp GRAVE,            &dbl_arrow,           \
 U_NP,                 U_NP,                 &kp EXCLAMATION,      &kp DOT,              &kp QMARK,            /***/   U_NA,                 U_NA,                 U_NA,                 U_NP,                 U_NP
 
 #define MIRYOKU_LAYER_NUM \
-&kp CARET,            &kp N7,               &kp N8,               &kp N9,               &kp MINUS,            /***/   U_NA,                 &u_to_U_BASE,         U_NA,                 U_NA,                 U_NA,                  \
-&kp EURO,             &kp N4,               &kp N5,               &kp N6,               &kp STAR,             /***/   &kp RHYPER,           &kp RCMD,             &kp ROPT,             &kp RCTRL,            &kp RSHFT,             \
+&kp CARET,            &kp N7,               &kp N8,               &kp N9,               &kp STAR,             /***/   U_NA,                 &u_to_U_BASE,         U_NA,                 U_NA,                 U_NA,                  \
+&kp EURO,             &kp N4,               &kp N5,               &kp N6,               &kp MINUS,            /***/   &kp RHYPER,           &kp RCMD,             &kp ROPT,             &kp RCTRL,            &kp RSHFT,             \
 &kp PERCENT,          &kp N1,               &kp N2,               &kp N3,               &kp PLUS,             /***/   U_NA,                 &u_to_U_NUM,          &u_to_U_NAV,          U_NA,                 U_NA,                  \
 U_NP,                 U_NP,                 &kp N0,               &kp DOT,              &kp BACKSLASH,        /***/   U_NA,                 U_NA,                 U_NA,                 U_NP,                 U_NP
 
