@@ -62,7 +62,7 @@ MIRYOKU_X(FUN,    "Fun") \
 #define MIRYOKU_LAYER_BASE \
 &tdto_q_switch,       &kp W,                &kp E,                &kp R,                &kp T,                /***/   &kp Y,                &kp U,                &kp I,                &kp O,                &kp P,                 \
 U_MT(LSHFT, A),       U_MT(LCTRL, S),       U_MT(LOPT, D),        U_MT(LCMD, F),        U_MT(LHYPER, G),      /***/   U_MT(RHYPER, H),      U_MT(RCMD, J),        U_MT(ROPT, K),        U_MT(RCTRL, L),       U_MT(RSHFT, SQT),      \
-&tdto_z_plain,        &kp X,                &kp C,                &kp V,                &kp B,                /***/   &kp N,                &kp M,                U_COMMA_SEMI,         U_DOT_COLON,          &kp FSLH,              \
+&tdto_z_plain,        &kp X,                &kp C,                &kp V,                &kp B,                /***/   &kp N,                &kp M,                &kp COMMA,            &kp DOT,              &kp FSLH,              \
 U_NP,                 U_NP,                 U_LT(U_MEDIA, ESC),   U_LT(U_NAV, SPC),     U_LT(U_MOUSE, TAB),   /***/   U_LT(U_SYM, RET),     U_LT(U_NUM, BSPC),    U_LT(U_FUN, DEL),     U_NP,                 U_NP
 
 
@@ -109,7 +109,7 @@ U_NP,                 U_NP,                 U_NA,                 U_NA,         
 #define MIRYOKU_LAYER_SYM \
 &kp CARET,            &kp PIPE,             &kp LEFT_BRACKET,     &kp RIGHT_BRACKET,    &kp MINUS,            /***/   &kp UNDER,            &kp LT,               &kp GT,               &kp TILDE,            &mkd_code,            \
 U_MT(LSHFT, AT),      U_MT(LCTRL, EQUAL),   U_MT(LOPT, LBRC),     U_MT(LCMD, RBRC),     U_MT(LHYPER, STAR),   /***/   U_MT(RHYPER, HASH),   U_MT(RCMD, LPAR),     U_MT(ROPT, RPAR),     U_MT(RCTRL, BSLH),    U_MT(RSHIFT, FSLH),   \
-&kp PERCENT,          &kp AMPERSAND,        &kp DQT,              &kp SQT,              &kp PLUS,             /***/   &kp DOLLAR,           &kp SEMI,             &kp COLON,            &kp GRAVE,            &dbl_arrow,           \
+&kp PERCENT,          &kp AMPERSAND,        &kp SQT,              &kp DQT,              &kp PLUS,             /***/   &kp DOLLAR,           &kp COLON,            &kp SEMI,             &kp GRAVE,            &dbl_arrow,           \
 U_NP,                 U_NP,                 &kp EXCLAMATION,      &kp DOT,              &kp QMARK,            /***/   U_NA,                 U_NA,                 U_NA,                 U_NP,                 U_NP
 
 #define MIRYOKU_LAYER_NUM \
