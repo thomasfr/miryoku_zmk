@@ -44,12 +44,19 @@
       tapping-term-ms = <135>;
       bindings = <&kp Z>, <&to U_PLAIN>;
     };
-    tdsl: tdsl {
+    tdsl_v_plain: tdsl_v_plain {
       compatible = "zmk,behavior-tap-dance";
-      label = "tdsl";
+      label = "tdsl_v_plain";
       #binding-cells = <0>;
       tapping-term-ms = <150>;
-      bindings = <&kp>, <&sl U_PLAIN>;
+      bindings = <&kp V>, <&sl U_PLAIN>;
+    };
+    tdsl_m_plain: tdsl_m_plain {
+      compatible = "zmk,behavior-tap-dance";
+      label = "tdsl_m_plain";
+      #binding-cells = <0>;
+      tapping-term-ms = <150>;
+      bindings = <&kp M>, <&sl U_PLAIN>;
     };
   };
 };
