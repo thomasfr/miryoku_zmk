@@ -36,6 +36,7 @@
 
 #define MIRYOKU_LAYER_LIST \
 MIRYOKU_X(BASE,   "Base") \
+MIRYOKU_X(PLAIN,  "Plain") \
 MIRYOKU_X(SWITCH, "Switch") \
 MIRYOKU_X(NAV,    "Nav") \
 MIRYOKU_X(MOUSE,  "Mouse") \
@@ -43,7 +44,6 @@ MIRYOKU_X(MEDIA,  "Media") \
 MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYM,    "Sym") \
 MIRYOKU_X(FUN,    "Fun") \
-MIRYOKU_X(PLAIN,  "Plain") \
 
 
 #define U_RDO LS(LG(Z))
@@ -54,24 +54,32 @@ MIRYOKU_X(PLAIN,  "Plain") \
 
 
 #define U_BASE      0
-#define U_SWITCH    1
-#define U_NAV       2
-#define U_MOUSE     3
-#define U_MEDIA     4
-#define U_NUM       5
-#define U_SYM       6
-#define U_FUN       7
-#define U_PLAIN     8
+#define U_PLAIN     1
+#define U_SWITCH    2
+#define U_NAV       3
+#define U_MOUSE     4
+#define U_MEDIA     5
+#define U_NUM       6
+#define U_SYM       7
+#define U_FUN       8
+
 
 
 
 #define MIRYOKU_LAYER_BASE \
 &tdto_q_switch,       &kp W,                &kp E,                &kp R,                &kp T,                /***/   &kp Y,                &kp U,                &kp I,                &kp O,                &kp P,                 \
 U_MT(LSHFT, A),       U_MT(LCTRL, S),       U_MT(LOPT, D),        U_MT(LCMD, F),        U_MT(LHYPER, G),      /***/   U_MT(RHYPER, H),      U_MT(RCMD, J),        U_MT(ROPT, K),        U_MT(RCTRL, L),       U_MT(RSHFT, SEMI),     \
-&kp Z,                &kp X,                &kp C,                &kp V,                &kp B,                /***/   &kp N,                &kp M,                &kp COMMA,            &kp DOT,              &kp FSLH,              \
+&kp Z,                &kp X,                &kp C,                U_LT(U_PLAIN, V),     &kp B,                /***/   &kp N,                &kp M,                &kp COMMA,            &kp DOT,              &kp FSLH,              \
 U_NP,                 U_NP,                 U_LT(U_MEDIA, ESC),   U_LT(U_NAV, SPC),     U_LT(U_MOUSE, TAB),   /***/   U_LT(U_SYM, RET),     U_LT(U_NUM, BSPC),    U_LT(U_FUN, DEL),     U_NP,                 U_NP
 
 
+
+
+#define MIRYOKU_LAYER_PLAIN \
+&kp Q,                &kp W,                &kp E,                &kp R,                &kp T,                /***/   &kp Y,                &kp U,                &kp I,                &kp O,                &kp P,                 \
+&kp A,                &kp S,                &kp D,                &kp F,                &kp G,                /***/   &kp H,                &kp J,                &kp K,                &kp L,                U_MT(RSHFT, SEMI),     \
+&kp Z,                &kp X,                &kp C,                &kp V,                &kp B,                /***/   &kp N,                &kp M,                &kp SEMI,             &kp DOT,              &kp FSLH,              \
+U_NP,                 U_NP,                 U_LT(U_MEDIA, ESC),   U_LT(U_NAV, SPC),     U_LT(U_MOUSE, TAB),   /***/   U_LT(U_SYM, RET),     U_LT(U_NUM, BSPC),    U_LT(U_FUN, DEL),     U_NP,                 U_NP
 
 
 #define MIRYOKU_LAYER_SWITCH \
@@ -123,14 +131,6 @@ U_NA,                 &kp HYPER_LT,         &kp HYPER_DN,         &kp HYPER_RT, 
 U_NA,                 U_NA,                 U_NA,                 U_NA,                 &kp SCR_WIN,          /***/   U_NA,                 &u_to_U_FUN,          &u_to_U_MEDIA,        U_NA,                 U_NA,                  \
 U_NP,                 U_NP,                 &kp HYPER_1,          &kp LG(SPC),          &kp HYPER_2,          /***/   U_NA,                 U_NA,                 U_NA,                 U_NP,                 U_NP
 
-
-
-
-#define MIRYOKU_LAYER_PLAIN \
-&kp Q,                &kp W,                &kp E,                &kp R,                &kp T,                /***/   &kp Y,                &kp U,                &kp I,                &kp O,                &kp P,                 \
-&kp A,                &kp S,                &kp D,                &kp F,                &kp G,                /***/   &kp H,                &kp J,                &kp K,                &kp L,                U_MT(RSHFT, SEMI),     \
-&kp Z,                &kp X,                &kp C,                &kp V,                &kp B,                /***/   &kp N,                &kp M,                &kp SEMI,             &kp DOT,              &kp FSLH,              \
-U_NP,                 U_NP,                 U_LT(U_MEDIA, ESC),   U_LT(U_NAV, SPC),     U_LT(U_MOUSE, TAB),   /***/   U_LT(U_SYM, RET),     U_LT(U_NUM, BSPC),    U_LT(U_FUN, DEL),     U_NP,                 U_NP
 
 
 #define MIRYOKU_LAYERMAPPING_SWITCH MIRYOKU_MAPPING
