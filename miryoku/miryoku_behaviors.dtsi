@@ -44,6 +44,13 @@
       tapping-term-ms = <135>;
       bindings = <&kp Z>, <&to U_PLAIN>;
     };
+    tdsl: tdsl {
+      compatible = "zmk,behavior-tap-dance";
+      label = "tdsl";
+      #binding-cells = <2>;
+      tapping-term-ms = <150>;
+      bindings = <&kp>, <&sl>;
+    };
   };
 };
 
