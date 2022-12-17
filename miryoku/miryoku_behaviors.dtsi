@@ -47,7 +47,7 @@
     tdsl: tdsl {
       compatible = "zmk,behavior-tap-dance";
       label = "tdsl";
-      #binding-cells = <1>;
+      #binding-cells = <0>;
       tapping-term-ms = <150>;
       bindings = <&kp>, <&sl U_PLAIN>;
     };
