@@ -69,7 +69,7 @@ MIRYOKU_X(FUN,    "Fun") \
 #define MIRYOKU_LAYER_BASE \
 &tdto_q_switch,       &kp W,                &kp E,                &kp R,                &kp T,                /***/   &kp Y,                &kp U,                &kp I,                &kp O,                &kp P,                 \
 U_MT(LSHFT, A),       U_MT(LCTRL, S),       U_MT(LOPT, D),        U_MT(LCMD, F),        U_MT(LHYPER, G),      /***/   U_MT(RHYPER, H),      U_MT(RCMD, J),        U_MT(ROPT, K),        U_MT(RCTRL, L),       U_MT(RSHFT, SEMI),     \
-&kp Z,                &kp X,                &kp C,                U_LT(U_PLAIN, V),     &kp B,                /***/   &kp N,                &kp M,                &kp COMMA,            &kp DOT,              &kp FSLH,              \
+&kp Z,                &kp X,                &kp C,                U_LT(U_PLAIN, V),     &kp B,                /***/   &kp N,                U_LT(U_PLAIN, M),     &kp COMMA,            &kp DOT,              &kp FSLH,              \
 U_NP,                 U_NP,                 U_LT(U_MEDIA, ESC),   U_LT(U_NAV, SPC),     U_LT(U_MOUSE, TAB),   /***/   U_LT(U_SYM, RET),     U_LT(U_NUM, BSPC),    U_LT(U_FUN, DEL),     U_NP,                 U_NP
 
 
@@ -77,8 +77,8 @@ U_NP,                 U_NP,                 U_LT(U_MEDIA, ESC),   U_LT(U_NAV, SP
 
 #define MIRYOKU_LAYER_PLAIN \
 &kp Q,                &kp W,                &kp E,                &kp R,                &kp T,                /***/   &kp Y,                &kp U,                &kp I,                &kp O,                &kp P,                 \
-&kp A,                &kp S,                &kp D,                &kp F,                &kp G,                /***/   &kp H,                &kp J,                &kp K,                &kp L,                U_MT(RSHFT, SEMI),     \
-&kp Z,                &kp X,                &kp C,                &kp V,                &kp B,                /***/   &kp N,                &kp M,                &kp SEMI,             &kp DOT,              &kp FSLH,              \
+&kp A,                &kp S,                &kp D,                &kp F,                &kp G,                /***/   &kp H,                &kp J,                &kp K,                &kp L,                &kp SEMI,              \
+U_MT(LSHFT, Z),       &kp X,                &kp C,                &kp V,                &kp B,                /***/   &kp N,                &kp M,                &kp SEMI,             &kp DOT,              U_MT(RSHFT, FSLH),     \
 U_NP,                 U_NP,                 U_LT(U_MEDIA, ESC),   U_LT(U_NAV, SPC),     U_LT(U_MOUSE, TAB),   /***/   U_LT(U_SYM, RET),     U_LT(U_NUM, BSPC),    U_LT(U_FUN, DEL),     U_NP,                 U_NP
 
 
