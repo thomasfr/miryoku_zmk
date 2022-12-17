@@ -62,7 +62,7 @@ MIRYOKU_X(FUN,    "Fun") \
 #define U_SYM       7
 #define U_FUN       8
 
-ZMK_CONDITIONAL_LAYER(NAV NUM, PLAIN)
+ZMK_CONDITIONAL_LAYER(U_NAV U_NUM, U_PLAIN)
 
 #define MIRYOKU_LAYER_BASE \
 &tdto_q_switch,       &kp W,                &kp E,                &kp R,                &kp T,                /***/   &kp Y,                &kp U,                &kp I,                &kp O,                &kp P,                 \
