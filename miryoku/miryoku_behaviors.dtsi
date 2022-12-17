@@ -37,12 +37,12 @@
       tapping-term-ms = <150>;
       bindings = <&none>, <&to U_BASE>;
     };        
-    tdto_z_plain: tdto_z_plain {
+    tdto_v_plain: tdto_v_plain {
       compatible = "zmk,behavior-tap-dance";
-      label = "tdto_z_plain";
+      label = "tdto_v_plain";
       #binding-cells = <0>;
       tapping-term-ms = <150>;
-      bindings = <&kp Z>, <&to U_PLAIN>;
+      bindings = <&kp V>, <&to U_PLAIN>;
     };
   };
 };
