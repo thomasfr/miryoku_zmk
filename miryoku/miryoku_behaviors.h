@@ -22,6 +22,7 @@
     };
 
 
+
 #define UC_MACRO(name, unicode_bindings) \
     / { \
         macros { \
@@ -36,6 +37,7 @@
         }; \
     };
 
+
 #define UC_MODMORPH(name, uc_binding, shifted_uc_binding) \
     / { \
         behaviors { \
@@ -49,14 +51,17 @@
         }; \
     };
 
+
 #define ZMK_UNICODE_SINGLE(name, L0, L1, L2, L3) \
     UC_MACRO(name ## _lower, &kp L0 &kp L1 &kp L2 &kp L3) \
     UC_MODMORPH(name, &name ## _lower, &none)
+
 
 #define ZMK_UNICODE_PAIR(name, L0, L1, L2, L3, U0, U1, U2, U3) \
     UC_MACRO(name ## _lower, &kp L0 &kp L1 &kp L2 &kp L3) \
     UC_MACRO(name ## _upper, &kp U0 &kp U1 &kp U2 &kp U3) \
     UC_MODMORPH(name, &name ## _lower, &name ## _upper)
+
 
 ZMK_UNICODE_PAIR(   de_ae,      N0, N0,  E, N4,    N0, N0,  C, N4)
 ZMK_UNICODE_PAIR(   de_oe,      N0, N0,  F, N6,    N0, N0,  D, N6)
