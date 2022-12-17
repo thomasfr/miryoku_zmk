@@ -3,12 +3,23 @@
 
 #pragma once
 
+#define U_MT(MOD, TAP) &u_mt MOD TAP
+#define U_LT(LAYER, TAP) &u_lt LAYER TAP
+
 #define ZMK_HELPER_STRINGIFY(x) #x
 #define OS_UNICODE_LEAD &macro_press &kp LALT
 #define OS_UNICODE_TRAIL &macro_release &kp LALT
 
-#define U_MT(MOD, TAP) &u_mt MOD TAP
-#define U_LT(LAYER, TAP) &u_lt LAYER TAP
+#define ZMK_CONDITIONAL_LAYER(if_layers, then_layer) \
+    / { \
+        conditional_layers { \
+            compatible = "zmk,conditional-layers"; \
+            tri_layer { \
+                if-layers = <if_layers>; \
+                then-layer = <then_layer>; \
+            }; \
+        }; \
+    };
 
 
 #define UC_MACRO(name, unicode_bindings) \
