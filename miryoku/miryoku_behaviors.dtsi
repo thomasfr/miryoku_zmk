@@ -68,12 +68,12 @@
     };
 };
 
-{ \
+/ {
     conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <U_NAV U_NUM>;
-            then-layer = <U_PLAIN>;
-        };
+      compatible = "zmk,conditional-layers";
+      tri_layer {
+          if-layers = <U_NAV U_NUM>;
+          then-layer = <U_PLAIN>;
+      };
     };
 };
