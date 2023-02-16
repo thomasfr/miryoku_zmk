@@ -50,7 +50,7 @@
     "timerOpacity": "1",
     "stopOnError": "word",
     "showAllLines": false,
-    "keymapMode": "next",
+    "keymapMode": "off",
     "keymapStyle": "split_matrix",
     "keymapLegendStyle": "lowercase",
     "keymapLayout": "qwerty",
