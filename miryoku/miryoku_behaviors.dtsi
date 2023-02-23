@@ -36,13 +36,6 @@
       #binding-cells = <0>;
       tapping-term-ms = <U_QUICK_TAP>;
       bindings = <&none>, <&to U_BASE>;
-    };        
-    tdto_v_plain: tdto_v_plain {
-      compatible = "zmk,behavior-tap-dance";
-      label = "tdto_v_plain";
-      #binding-cells = <0>;
-      tapping-term-ms = <U_QUICK_TAP>;
-      bindings = <&kp V>, <&to U_PLAIN>;
     };
   };
 };
