@@ -128,7 +128,7 @@ U_NP,                 U_NP,                 &kp N0,               &kp DOT,      
 #define MIRYOKU_LAYER_FUN \
 &kp LC(LG(Q)),        U_NA,                 &kp HYPER_UP,         &kp SH_APPS,          &kp SCR_AREA,         /***/   U_NA,                 &u_to_U_BASE,         U_NA,                 U_NA,                 U_NA,                  \
 U_NA,                 &kp HYPER_LT,         &kp HYPER_DN,         &kp HYPER_RT,         &kp SCR_CLP_AREA,     /***/   &kp RHYPER,           &kp RCMD,             &kp ROPT,             &kp RCTRL,            &kp RSHFT,             \
-&u_bt_sel_0,          &u_bt_sel_1,          &u_bt_sel_2,          &u_bt_sel_3,          &kp SCR_WIN,          /***/   U_NA,                 &u_to_U_FUN,          &u_to_U_MEDIA,        U_NA,                 U_NA,                  \
+&out OUT_TOG,         &bt BT_CLR,           &bt BT_PRV,           &bt BT_NXT,           &kp SCR_WIN,          /***/   U_NA,                 &u_to_U_FUN,          &u_to_U_MEDIA,        U_NA,                 U_NA,                  \
 U_NP,                 U_NP,                 &kp HYPER_1,          &kp LG(SPC),          &kp HYPER_2,          /***/   U_NA,                 U_NA,                 U_NA,                 U_NP,                 U_NP
 
 

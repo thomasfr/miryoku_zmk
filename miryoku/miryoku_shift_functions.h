@@ -3,10 +3,6 @@
 
 #pragma once
 
-#define U_COMMA_SEMI &u_comma_semi
-#define U_DOT_COLON &u_dot_colon
-#define U_FSLH_BSLH &u_fslh_bslh
-
 #if defined (MIRYOKU_KLUDGE_GLOBALSHIFTFUNCTIONS)
   #define U_RGB_TOG &u_rgb_tog
   #define U_RGB_EFF &u_rgb_eff
