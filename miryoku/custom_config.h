@@ -1,26 +1,19 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
-//#define MIRYOKU_KLUDGE_MOUSEKEYSPR
+#define MIRYOKU_KLUDGE_MOUSEKEYSPR
 
 #define U_TAPPING_TERM 180
 #define U_QUICK_TAP 120
 
 #define MIRYOKU_ALPHAS_QWERTY
-//#define MIRYOKU_TAP_QWERTY
-//#define MIRYOKU_EXTRA_QWERTY
-//#define MIRYOKU_NAV_INVERTEDT
-//#define MIRYOKU_CLIPBOARD_MAC
-//#define MIRYOKU_LAYERS_FLIP
-//#define MIRYOKU_MAPPING_EXTENDED_THUMBS
 
 #define LOPT         LALT
-// #define ROPT         RALT
+
 #define SH_APPS      C_AC_DESKTOP_SHOW_ALL_APPLICATIONS
 #define SH_WINS      C_AC_DESKTOP_SHOW_ALL_WINDOWS
 #define LHYPER       LS(LC(LA(LCMD)))
-// #define RHYPER       RS(RC(RA(RCMD)))
-// #define MEH          LS(LC(LALT))
+
 #define EURO         LS(LA(N2))
 
 #define HYPER_1      LS(LC(LA(LG(N1))))
