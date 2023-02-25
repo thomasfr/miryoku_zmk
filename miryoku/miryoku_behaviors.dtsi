@@ -9,7 +9,7 @@
       #binding-cells = <2>;
       tapping_term_ms = <U_TAPPING_TERM>;
       flavor = "tap-preferred";
-      hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 35 36 37>;
+      hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
       quick-tap-ms = <U_QUICK_TAP>;
       global-quick-tap;
       bindings = <&kp>, <&kp>;
@@ -20,7 +20,7 @@
       #binding-cells = <2>;
       tapping_term_ms = <U_TAPPING_TERM>;
       flavor = "tap-preferred";
-      hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 32 33 34>;
+      hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24>;
       quick-tap-ms = <U_QUICK_TAP>;
       global-quick-tap;
       bindings = <&kp>, <&kp>;
@@ -32,7 +32,6 @@
       tapping_term_ms = <U_TAPPING_TERM>;
       flavor = "tap-preferred";
       quick-tap-ms = <U_QUICK_TAP>;
-      global-quick-tap;
       bindings = <&mo>, <&kp>;
     };
     tdto_q_switch: tdto_q_switch {
