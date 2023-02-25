@@ -36,14 +36,14 @@
       compatible = "zmk,behavior-tap-dance";
       label = "tdto_q_switch";
       #binding-cells = <0>;
-      tapping-term-ms = 200;
+      tapping-term-ms = <200>;
       bindings = <&kp Q>, <&to U_SWITCH>;
     };        
     tdto_base: tdto_base {
       compatible = "zmk,behavior-tap-dance";
       label = "tdto_base";
       #binding-cells = <0>;
-      tapping-term-ms = 200;
+      tapping-term-ms = <200>;
       bindings = <&none>, <&to U_BASE>;
     };
   };
