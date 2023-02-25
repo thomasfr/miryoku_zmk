@@ -119,7 +119,7 @@ U_NP,                 U_NP,                 &kp EXCLAMATION,      &kp DOT,      
 
 #define MIRYOKU_LAYER_NUM \
 &kp CARET,            &kp N7,               &kp N8,               &kp N9,               &kp STAR,             /***/   U_NA,                 U_NA,                 U_NA,                 U_NA,                 U_NA,                  \
-&kp EURO,             &kp N4,               &kp N5,               &tdto_q_switch,       &kp MINUS,            /***/   &kp LHYPER,           &kp LCMD,             &kp LOPT,             &kp LCTRL,            &kp RSHFT,             \
+&kp EURO,             &kp N4,               &kp N5,               &td_num,              &kp MINUS,            /***/   &kp LHYPER,           &kp LCMD,             &kp LOPT,             &kp LCTRL,            &kp RSHFT,             \
 &kp PERCENT,          &kp N1,               &kp N2,               &kp N3,               &kp PLUS,             /***/   U_NA,                 U_NA,                 U_NA,                 U_NA,                 U_NA,                  \
 U_NP,                 U_NP,                 &kp N0,               &kp DOT,              &kp BACKSLASH,        /***/   U_NA,                 U_NA,                 U_NA,                 U_NP,                 U_NP
 
