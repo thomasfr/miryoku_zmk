@@ -19,10 +19,10 @@ MIRYOKU_DOUBLE_TAP_GUARD(u_to_U_##LAYER, &to U_##LAYER)
 MIRYOKU_LAYER_LIST
 #undef MIRYOKU_X
 
-#if defined (MIRYOKU_KLUDGE_DOUBLETAPBOOT)
-  #if defined (MIRYOKU_KLUDGE_SUSPEND)
-MIRYOKU_DOUBLE_TAP_GUARD(u_suspend, &suspend)
-  #else
-MIRYOKU_DOUBLE_TAP_GUARD(u_bootloader, &bootloader)
-  #endif
-#endif
+// #if defined (MIRYOKU_KLUDGE_DOUBLETAPBOOT)
+//   #if defined (MIRYOKU_KLUDGE_SUSPEND)
+// MIRYOKU_DOUBLE_TAP_GUARD(u_suspend, &suspend)
+//   #else
+// MIRYOKU_DOUBLE_TAP_GUARD(u_bootloader, &bootloader)
+//   #endif
+// #endif

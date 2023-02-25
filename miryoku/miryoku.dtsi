@@ -23,30 +23,30 @@ MIRYOKU_LAYER_LIST
   };
 };
 
-#include "miryoku_shift_functions.dtsi"
+// #include "miryoku_shift_functions.dtsi"
 
-#include "miryoku_double_tap_guard.dtsi"
+// #include "miryoku_double_tap_guard.dtsi"
 
-#if defined (MIRYOKU_KLUDGE_MOUSEKEYSPR)
+// #if defined (MIRYOKU_KLUDGE_MOUSEKEYSPR)
   #include "miryoku_kludge_mousekeyspr.dtsi"
-#else
-  #include "miryoku_mousekeys.dtsi"
-#endif
+// #else
+//  #include "miryoku_mousekeys.dtsi"
+// #endif
 
-#if defined (MIRYOKU_KLUDGE_THUMBCOMBOS)
-  #include "miryoku_kludge_thumbcombos.dtsi"
-#endif
+// #if defined (MIRYOKU_KLUDGE_THUMBCOMBOS)
+//   #include "miryoku_kludge_thumbcombos.dtsi"
+// #endif
 
-#if defined (MIRYOKU_KLUDGE_TOPROWCOMBOS)
-  #include "miryoku_kludge_toprowcombos.dtsi"
-#endif
+// #if defined (MIRYOKU_KLUDGE_TOPROWCOMBOS)
+//   #include "miryoku_kludge_toprowcombos.dtsi"
+// #endif
 
-#if defined (MIRYOKU_KLUDGE_BOTTOMROWCOMBOS)
-  #include "miryoku_kludge_bottomrowcombos.dtsi"
-#endif
+// #if defined (MIRYOKU_KLUDGE_BOTTOMROWCOMBOS)
+//   #include "miryoku_kludge_bottomrowcombos.dtsi"
+// #endif
 
-#if defined (MIRYOKU_KLUDGE_TAPDELAY)
-  #include "miryoku_kludge_tapdelay.dtsi"
-#else
+// #if defined (MIRYOKU_KLUDGE_TAPDELAY)
+//  #include "miryoku_kludge_tapdelay.dtsi"
+// #else
   #include "miryoku_behaviors.dtsi"
-#endif
+//#endif
