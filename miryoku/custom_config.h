@@ -3,8 +3,8 @@
 
 #define MIRYOKU_KLUDGE_MOUSEKEYSPR
 
-#define U_TAPPING_TERM 150
-#define U_QUICK_TAP_HOMEROW 90
+#define U_TAPPING_TERM 140
+#define U_QUICK_TAP_HOMEROW 80
 #define U_QUICK_TAP 120
 #define U_QUICK_TAP_LAYER_SWITCH 200
 
@@ -67,7 +67,7 @@ MIRYOKU_X(FUN,    "Fun") \
 #define MIRYOKU_LAYER_BASE \
 &tdto_q_switch,       &kp W,                &kp E,                &kp R,                &kp T,                /***/   &kp Y,                &kp U,                &kp I,                &kp O,                &kp P,                 \
 U_LMT(LSHFT, A),      U_LMT(LCTRL, S),      U_LMT(LOPT, D),       U_LMT(LCMD, F),       U_LMT(LHYPER, G),     /***/   U_RMT(LHYPER, H),     U_RMT(LCMD, J),       U_RMT(LOPT, K),       U_RMT(LCTRL, L),      U_RMT(RSHFT, SEMI),    \
-&kp Z,                &kp X,                &kp C,                U_LT(U_PLAIN, V),     &kp B,                /***/   &kp N,                U_LT(U_PLAIN, M),     &kp COMMA,            &kp DOT,              &kp FSLH,              \
+&kp Z,                &kp X,                &kp C,                U_SLT(U_PLAIN, V),     &kp B,                /***/  &kp N,                U_SLT(U_PLAIN, M),     &kp COMMA,            &kp DOT,              &kp FSLH,              \
 U_NP,                 U_NP,                 U_LT(U_MEDIA, ESC),   U_LT(U_NAV, SPC),     U_LT(U_MOUSE, TAB),   /***/   U_LT(U_SYM, RET),     U_LT(U_NUM, BSPC),    U_LT(U_FUN, DEL),     U_NP,                 U_NP
 
 

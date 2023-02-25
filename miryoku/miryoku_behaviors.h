@@ -6,3 +6,4 @@
 #define U_LMT(MOD, TAP) &u_lmt MOD TAP
 #define U_RMT(MOD, TAP) &u_rmt MOD TAP
 #define U_LT(LAYER, TAP) &u_lt LAYER TAP
+#define U_SLT(LAYER, TAP) &u_slt LAYER TAP
