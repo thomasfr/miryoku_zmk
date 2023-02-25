@@ -3,6 +3,9 @@
 
 //#define MIRYOKU_KLUDGE_MOUSEKEYSPR
 
+#define U_TAPPING_TERM 180
+#define U_QUICK_TAP 120
+
 #define MIRYOKU_ALPHAS_QWERTY
 //#define MIRYOKU_TAP_QWERTY
 //#define MIRYOKU_EXTRA_QWERTY
@@ -68,7 +71,7 @@ MIRYOKU_X(FUN,    "Fun") \
 
 #define MIRYOKU_LAYER_BASE \
 &tdto_q_switch,       &kp W,                &kp E,                &kp R,                &kp T,                /***/   &kp Y,                &kp U,                &kp I,                &kp O,                &kp P,                 \
-U_MT(LSHFT, A),       U_MT(LCTRL, S),       U_MT(LOPT, D),        U_MT(LCMD, F),        U_MT(LHYPER, G),      /***/   U_MT(LHYPER, H),      U_MT(LCMD, J),        U_MT(LOPT, K),        U_MT(LCTRL, L),       U_MT(RSHFT, SEMI),     \
+U_LMT(LSHFT, A),      U_LMT(LCTRL, S),      U_LMT(LOPT, D),       U_LMT(LCMD, F),       U_LMT(LHYPER, G),     /***/   U_RMT(LHYPER, H),     U_RMT(LCMD, J),       U_RMT(LOPT, K),       U_RMT(LCTRL, L),      U_RMT(RSHFT, SEMI),    \
 &kp Z,                &kp X,                &kp C,                U_LT(U_PLAIN, V),     &kp B,                /***/   &kp N,                U_LT(U_PLAIN, M),     &kp COMMA,            &kp DOT,              &kp FSLH,              \
 U_NP,                 U_NP,                 U_LT(U_MEDIA, ESC),   U_LT(U_NAV, SPC),     U_LT(U_MOUSE, TAB),   /***/   U_LT(U_SYM, RET),     U_LT(U_NUM, BSPC),    U_LT(U_FUN, DEL),     U_NP,                 U_NP
 
@@ -78,13 +81,13 @@ U_NP,                 U_NP,                 U_LT(U_MEDIA, ESC),   U_LT(U_NAV, SP
 #define MIRYOKU_LAYER_PLAIN \
 &kp Q,                &kp W,                &kp E,                &kp R,                &kp T,                /***/   &kp Y,                &kp U,                &kp I,                &kp O,                &kp P,                 \
 &kp A,                &kp S,                &kp D,                &kp F,                &kp G,                /***/   &kp H,                &kp J,                &kp K,                &kp L,                &kp SEMI,              \
-U_MT(LSHFT, Z),       &kp X,                &kp C,                &kp V,                &kp B,                /***/   &kp N,                &kp M,                &kp SEMI,             &kp DOT,              U_MT(RSHFT, FSLH),     \
+U_LMT(LSHFT, Z),      &kp X,                &kp C,                &kp V,                &kp B,                /***/   &kp N,                &kp M,                &kp SEMI,             &kp DOT,              U_RMT(RSHFT, FSLH),    \
 U_NP,                 U_NP,                 U_LT(U_MEDIA, ESC),   U_LT(U_NAV, SPC),     U_LT(U_MOUSE, TAB),   /***/   U_LT(U_SYM, RET),     U_LT(U_NUM, BSPC),    U_LT(U_FUN, DEL),     U_NP,                 U_NP
 
 
 #define MIRYOKU_LAYER_SWITCH \
 &tdto_base,           U_NU,                 &kp U_RDO,            &kp U_UND,            &kp PG_UP,            /***/   &kp Y,                &kp U,                &kp I,                &kp O,                &kp P,                 \
-&kp LSHFT,            U_MT(LCTRL, U_CUT),   U_MT(LOPT, U_CPY),    U_MT(LCMD, U_PST),    U_MT(LHYPER, SPC),    /***/   U_MT(LHYPER, H),      U_MT(LCMD, J),        U_MT(LOPT, K),        U_MT(LCTRL, L),       U_MT(RSHFT, SEMI),     \
+&kp LSHFT,            U_LMT(LCTRL, U_CUT),  U_LMT(LOPT, U_CPY),   U_LMT(LCMD, U_PST),   U_LMT(LHYPER, SPC),   /***/   U_RMT(LHYPER, H),     U_RMT(LCMD, J),       U_RMT(LOPT, K),       U_RMT(LCTRL, L),      U_RMT(RSHFT, SEMI),    \
 U_NU,                 &kp DEL,              &kp RET,              &kp BSPC,             &kp PG_DN,            /***/   &kp N,                &kp M,                &kp COMMA,            &kp DOT,              &kp FSLH,              \
 U_NP,                 U_NP,                 U_LT(U_MEDIA, ESC),   U_LT(U_NAV, SPC),     U_LT(U_MOUSE, TAB),   /***/   U_LT(U_MOUSE, RET),   U_LT(U_NAV, BSPC),    U_LT(U_FUN, DEL),     U_NP,                 U_NP
 
@@ -99,13 +102,13 @@ U_NP,                 U_NP,                 U_NA,                 U_NA,         
 
 #define MIRYOKU_LAYER_NAV \
 U_NU,                 U_NU,                 &kp U_RDO,            &kp U_UND,            &kp PG_UP,            /***/   &kp PG_UP,            &kp HOME,             &kp UP,               &kp END,              U_NU,                  \
-&kp LSHFT,            U_MT(LCTRL, U_CUT),   U_MT(LOPT, U_CPY),    U_MT(LCMD, U_PST),    U_MT(LHYPER, SPC),    /***/   U_NU,                 &kp LEFT,             &kp DOWN,             &kp RIGHT,            U_NU,                  \
+&kp LSHFT,            U_LMT(LCTRL, U_CUT),  U_LMT(LOPT, U_CPY),   U_LMT(LCMD, U_PST),   U_LMT(LHYPER, SPC),   /***/   U_NU,                 &kp LEFT,             &kp DOWN,             &kp RIGHT,            U_NU,                  \
 U_NU,                 &kp DEL,              &kp RET,              &kp BSPC,             &kp PG_DN,            /***/   &kp PG_DN,            U_NU,                 U_NU,                 U_NU,                 U_NU,                  \
 U_NP,                 U_NP,                 U_NA,                 U_NA,                 U_NA,                 /***/   &kp RET,              &kp BSPC,             &kp DEL,              U_NP,                 U_NP
 
 #define MIRYOKU_LAYER_MOUSE \
 U_NU,                 U_NU,                 &kp U_RDO,            &kp U_UND,            &kp PG_UP,            /***/   U_WH_D,               U_WH_R,               U_MS_U,               U_WH_L,               U_NU,                  \
-&kp LSHFT,            U_MT(LCTRL, U_CUT),   U_MT(LOPT, U_CPY),    U_MT(LCMD, U_PST),    U_MT(LHYPER, SPC),    /***/   U_NU,                 U_MS_L,               U_MS_D,               U_MS_R,               U_NU,                  \
+&kp LSHFT,            U_LMT(LCTRL, U_CUT),  U_LMT(LOPT, U_CPY),   U_LMT(LCMD, U_PST),   U_LMT(LHYPER, SPC),   /***/   U_NU,                 U_MS_L,               U_MS_D,               U_MS_R,               U_NU,                  \
 U_NA,                 &kp DEL,              &kp RET,              &kp BSPC,             &kp PG_DN,            /***/   U_WH_U,               U_NU,                 U_NU,                 U_NU,                 U_NU,                  \
 U_NP,                 U_NP,                 U_NA,                 U_NA,                 U_NA,                 /***/   U_BTN1,               U_BTN2,               U_BTN3,               U_NP,                 U_NP
 
@@ -115,7 +118,7 @@ U_NP,                 U_NP,                 U_NA,                 U_NA,         
 
 #define MIRYOKU_LAYER_SYM \
 &kp CARET,            &kp PIPE,             &kp LEFT_BRACKET,     &kp RIGHT_BRACKET,    &kp STAR,             /***/   &kp UNDER,            &kp LT,               &kp GT,               &kp TILDE,            &mkd_code,            \
-U_MT(LSHFT, AT),      U_MT(LCTRL, EQUAL),   U_MT(LOPT, LBRC),     U_MT(LCMD, RBRC),     U_MT(LHYPER, MINUS),  /***/   U_MT(LHYPER, HASH),   U_MT(LCMD, LPAR),     U_MT(LOPT, RPAR),     U_MT(LCTRL, BSLH),    U_MT(RSHIFT, FSLH),   \
+U_LMT(LSHFT, AT),     U_LMT(LCTRL, EQUAL),  U_LMT(LOPT, LBRC),    U_LMT(LCMD, RBRC),    U_LMT(LHYPER, MINUS),  /***/  U_RMT(LHYPER, HASH),  U_RMT(LCMD, LPAR),    U_RMT(LOPT, RPAR),    U_RMT(LCTRL, BSLH),   U_RMT(RSHIFT, FSLH),  \
 &kp PERCENT,          &kp AMPERSAND,        &kp SQT,              &kp DQT,              &kp PLUS,             /***/   &kp DOLLAR,           &kp COLON,            &kp SEMI,             &kp GRAVE,            &dbl_arrow,           \
 U_NP,                 U_NP,                 &kp EXCLAMATION,      &kp DOT,              &kp QMARK,            /***/   U_NA,                 U_NA,                 U_NA,                 U_NP,                 U_NP
 

@@ -3,12 +3,24 @@
 
 / {
   behaviors {
-    u_mt: u_mt {
+    u_lmt: u_lmt {
       compatible = "zmk,behavior-hold-tap";
-      label = "u_mt";
+      label = "u_lmt";
       #binding-cells = <2>;
       tapping_term_ms = <U_TAPPING_TERM>;
       flavor = "tap-preferred";
+      hold-trigger-key-position = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 35 36 37>
+      quick-tap-ms = <U_QUICK_TAP>;
+      global-quick-tap;
+      bindings = <&kp>, <&kp>;
+    };
+    u_rmt: u_rmt {
+      compatible = "zmk,behavior-hold-tap";
+      label = "u_rmt";
+      #binding-cells = <2>;
+      tapping_term_ms = <U_TAPPING_TERM>;
+      flavor = "tap-preferred";
+      hold-trigger-key-position = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 32 33 34>
       quick-tap-ms = <U_QUICK_TAP>;
       global-quick-tap;
       bindings = <&kp>, <&kp>;
