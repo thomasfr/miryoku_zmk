@@ -51,6 +51,13 @@
       tapping-term-ms = <U_QUICK_TAP_LAYER_SWITCH>;
       bindings = <&kp Q>, <&to U_SWITCH>;
     };        
+    td_num: td_num {
+      compatible = "zmk,behavior-tap-dance";
+      label = "td_num";
+      #binding-cells = <0>;
+      tapping-term-ms = <U_QUICK_TAP_LAYER_SWITCH>;
+      bindings = <&kp N6>, <&kp N6>, <&kp N6>, <&macro_tap &kp 0 &kp 0 &kp 0 &kp 0 &kp 0 &kp 0 &kp 0 &kp 0>;
+    };        
     tdto_base: tdto_base {
       compatible = "zmk,behavior-tap-dance";
       label = "tdto_base";
