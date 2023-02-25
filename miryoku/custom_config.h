@@ -68,7 +68,7 @@ MIRYOKU_X(FUN,    "Fun") \
 
 #define MIRYOKU_LAYER_BASE \
 &tdto_q_switch,       &kp W,                &kp E,                &kp R,                &kp T,                /***/   &kp Y,                &kp U,                &kp I,                &kp O,                &kp P,                 \
-U_MT(LSHFT, A),       U_MT(LCTRL, S),       U_MT(LOPT, D),        U_MT(LCMD, F),        U_MT(LHYPER, G),      /***/   U_MT(LHYPER, H),      U_MT(RCMD, J),        U_MT(LOPT, K),        U_MT(RCTRL, L),       U_MT(RSHFT, SEMI),     \
+U_MT(LSHFT, A),       U_MT(LCTRL, S),       U_MT(LOPT, D),        U_MT(LCMD, F),        U_MT(LHYPER, G),      /***/   U_MT(LHYPER, H),      U_MT(LCMD, J),        U_MT(LOPT, K),        U_MT(LCTRL, L),       U_MT(RSHFT, SEMI),     \
 &kp Z,                &kp X,                &kp C,                U_LT(U_PLAIN, V),     &kp B,                /***/   &kp N,                U_LT(U_PLAIN, M),     &kp COMMA,            &kp DOT,              &kp FSLH,              \
 U_NP,                 U_NP,                 U_LT(U_MEDIA, ESC),   U_LT(U_NAV, SPC),     U_LT(U_MOUSE, TAB),   /***/   U_LT(U_SYM, RET),     U_LT(U_NUM, BSPC),    U_LT(U_FUN, DEL),     U_NP,                 U_NP
 
@@ -84,7 +84,7 @@ U_NP,                 U_NP,                 U_LT(U_MEDIA, ESC),   U_LT(U_NAV, SP
 
 #define MIRYOKU_LAYER_SWITCH \
 &tdto_base,           U_NU,                 &kp U_RDO,            &kp U_UND,            &kp PG_UP,            /***/   &kp Y,                &kp U,                &kp I,                &kp O,                &kp P,                 \
-&kp LSHFT,            U_MT(LCTRL, U_CUT),   U_MT(LOPT, U_CPY),    U_MT(LCMD, U_PST),    U_MT(LHYPER, SPC),    /***/   U_MT(LHYPER, H),      U_MT(RCMD, J),        U_MT(LOPT, K),        U_MT(RCTRL, L),       U_MT(RSHFT, SEMI),     \
+&kp LSHFT,            U_MT(LCTRL, U_CUT),   U_MT(LOPT, U_CPY),    U_MT(LCMD, U_PST),    U_MT(LHYPER, SPC),    /***/   U_MT(LHYPER, H),      U_MT(LCMD, J),        U_MT(LOPT, K),        U_MT(LCTRL, L),       U_MT(RSHFT, SEMI),     \
 U_NU,                 &kp DEL,              &kp RET,              &kp BSPC,             &kp PG_DN,            /***/   &kp N,                &kp M,                &kp COMMA,            &kp DOT,              &kp FSLH,              \
 U_NP,                 U_NP,                 U_LT(U_MEDIA, ESC),   U_LT(U_NAV, SPC),     U_LT(U_MOUSE, TAB),   /***/   U_LT(U_MOUSE, RET),   U_LT(U_NAV, BSPC),    U_LT(U_FUN, DEL),     U_NP,                 U_NP
 
@@ -92,9 +92,9 @@ U_NP,                 U_NP,                 U_LT(U_MEDIA, ESC),   U_LT(U_NAV, SP
 
 
 #define MIRYOKU_LAYER_MEDIA \
-U_NU,                 U_NU,                 U_NU,                 &u_to_U_BASE,         U_NU,                 /***/   U_NU,                 &kp C_BRI_UP,         &kp C_VOL_UP,         U_NU,                 U_NU,                  \
+U_NU,                 U_NU,                 U_NU,                 U_NU,                 U_NU,                 /***/   U_NU,                 &kp C_BRI_UP,         &kp C_VOL_UP,         U_NU,                 U_NU,                  \
 &kp LSHFT,            &kp LCTRL,            &kp LALT,             &kp LCMD,             &kp LHYPER,           /***/   &kp K_MUTE,           &kp C_PREV,           &kp C_VOL_DN,         &kp C_NEXT,           U_NU,                  \
-U_NU,                 U_NU,                 &u_to_U_FUN,          &u_to_U_MEDIA,        U_NU,                 /***/   U_NU,                 &kp C_BRI_DN,         &kp C_PP,             U_NU,                 U_NU,                  \
+U_NU,                 U_NU,                 U_NU,                 U_NU,                 U_NU,                 /***/   U_NU,                 &kp C_BRI_DN,         &kp C_PP,             U_NU,                 U_NU,                  \
 U_NP,                 U_NP,                 U_NA,                 U_NA,                 U_NA,                 /***/   &kp HYPER_3,          &kp HYPER_4,          &kp HYPER_5,          U_NP,                 U_NP
 
 #define MIRYOKU_LAYER_NAV \
@@ -115,20 +115,20 @@ U_NP,                 U_NP,                 U_NA,                 U_NA,         
 
 #define MIRYOKU_LAYER_SYM \
 &kp CARET,            &kp PIPE,             &kp LEFT_BRACKET,     &kp RIGHT_BRACKET,    &kp STAR,             /***/   &kp UNDER,            &kp LT,               &kp GT,               &kp TILDE,            &mkd_code,            \
-U_MT(LSHFT, AT),      U_MT(LCTRL, EQUAL),   U_MT(LOPT, LBRC),     U_MT(LCMD, RBRC),     U_MT(LHYPER, MINUS),  /***/   U_MT(LHYPER, HASH),   U_MT(RCMD, LPAR),     U_MT(LOPT, RPAR),     U_MT(RCTRL, BSLH),    U_MT(RSHIFT, FSLH),   \
+U_MT(LSHFT, AT),      U_MT(LCTRL, EQUAL),   U_MT(LOPT, LBRC),     U_MT(LCMD, RBRC),     U_MT(LHYPER, MINUS),  /***/   U_MT(LHYPER, HASH),   U_MT(LCMD, LPAR),     U_MT(LOPT, RPAR),     U_MT(LCTRL, BSLH),    U_MT(RSHIFT, FSLH),   \
 &kp PERCENT,          &kp AMPERSAND,        &kp SQT,              &kp DQT,              &kp PLUS,             /***/   &kp DOLLAR,           &kp COLON,            &kp SEMI,             &kp GRAVE,            &dbl_arrow,           \
 U_NP,                 U_NP,                 &kp EXCLAMATION,      &kp DOT,              &kp QMARK,            /***/   U_NA,                 U_NA,                 U_NA,                 U_NP,                 U_NP
 
 #define MIRYOKU_LAYER_NUM \
-&kp CARET,            &kp N7,               &kp N8,               &kp N9,               &kp STAR,             /***/   U_NA,                 &u_to_U_BASE,         U_NA,                 U_NA,                 U_NA,                  \
-&kp EURO,             &kp N4,               &kp N5,               &kp N6,               &kp MINUS,            /***/   &kp LHYPER,           &kp RCMD,             &kp LOPT,             &kp RCTRL,            &kp RSHFT,             \
-&kp PERCENT,          &kp N1,               &kp N2,               &kp N3,               &kp PLUS,             /***/   U_NA,                 &u_to_U_NUM,          &u_to_U_NAV,          U_NA,                 U_NA,                  \
+&kp CARET,            &kp N7,               &kp N8,               &kp N9,               &kp STAR,             /***/   U_NA,                 U_NA,                 U_NA,                 U_NA,                 U_NA,                  \
+&kp EURO,             &kp N4,               &kp N5,               &kp N6,               &kp MINUS,            /***/   &kp LHYPER,           &kp LCMD,             &kp LOPT,             &kp LCTRL,            &kp RSHFT,             \
+&kp PERCENT,          &kp N1,               &kp N2,               &kp N3,               &kp PLUS,             /***/   U_NA,                 U_NA,                 U_NA,                 U_NA,                 U_NA,                  \
 U_NP,                 U_NP,                 &kp N0,               &kp DOT,              &kp BACKSLASH,        /***/   U_NA,                 U_NA,                 U_NA,                 U_NP,                 U_NP
 
 #define MIRYOKU_LAYER_FUN \
-&kp LC(LG(Q)),        U_NA,                 &kp HYPER_UP,         &kp SH_APPS,          &kp SCR_AREA,         /***/   U_NA,                 &u_to_U_BASE,         U_NA,                 U_NA,                 U_NA,                  \
-U_NP,                 &kp HYPER_LT,         &kp HYPER_DN,         &kp HYPER_RT,         &kp SCR_CLP_AREA,     /***/   &kp LHYPER,           &kp RCMD,             &kp LOPT,             &kp RCTRL,            &kp RSHFT,             \
-U_NP,                 &bt BT_CLR,           &bt BT_PRV,           &bt BT_NXT,           &kp SCR_WIN,          /***/   U_NA,                 &u_to_U_FUN,          &u_to_U_MEDIA,        U_NA,                 U_NA,                  \
+&kp LC(LG(Q)),        U_NA,                 &kp HYPER_UP,         &kp SH_APPS,          &kp SCR_AREA,         /***/   U_NA,                 U_NA,                 U_NA,                 U_NA,                 U_NA,                  \
+U_NP,                 &kp HYPER_LT,         &kp HYPER_DN,         &kp HYPER_RT,         &kp SCR_CLP_AREA,     /***/   &kp LHYPER,           &kp LCMD,             &kp LOPT,             &kp LCTRL,            &kp RSHFT,             \
+U_NP,                 &bt BT_CLR,           &bt BT_PRV,           &bt BT_NXT,           &kp SCR_WIN,          /***/   U_NA,                 U_NA,                 U_NA,                 U_NA,                 U_NA,                  \
 U_NP,                 U_NP,                 &kp HYPER_1,          &kp LG(SPC),          &kp HYPER_2,          /***/   U_NA,                 U_NA,                 U_NA,                 U_NP,                 U_NP
 
 
